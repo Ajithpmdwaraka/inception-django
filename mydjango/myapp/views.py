@@ -1,6 +1,40 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 # Create your views here.
 def helloWorld(request):
-    return HttpResponse("Hello Peepz")
+    moviedata = {
+        'movies': [
+            {
+                "title": "Godfather",
+                "year": 1990,
+                "summary": "It is a classic mafia film.",
+                "success": False,
+            },
+            {
+                "title": "Godfather",
+                "year": 1990,
+                "summary": "It is a classic mafia film.",
+                "success": False,
+            },
+            {
+                "title": "Godfather",
+                "year": 1990,
+                "summary": "It is a classic mafia film.",
+                "success": False,
+            },
+            {
+                "title": "Godfather",
+                "year": 1990,
+                "summary": "It is a classic mafia film.",
+                "success": False,
+            },
+            {
+                "title": "Godfather",
+                "year": 1990,
+                "summary": "It is a classic mafia film.",
+                "success": False,
+            },
+        ]
+    }
+    return render(request, "hello.html", moviedata)
