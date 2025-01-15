@@ -12,10 +12,10 @@ def helloWorld(request):
                 "success": False,
             },
             {
-                "title": "Godfather",
-                "year": 1990,
+                "title": "Titanic",
+                "year": 2000,
                 "summary": "It is a classic mafia film.",
-                "success": False,
+                "success": True,
             },
             {
                 "title": "Godfather",
